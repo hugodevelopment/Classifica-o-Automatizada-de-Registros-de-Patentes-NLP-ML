@@ -4,6 +4,31 @@ Este projeto implementa uma solução de inteligência de dados voltada ao ecoss
 
 ---
 
+## 💡 Caso de Uso Real: Monitoramento Pró-Ativo e Alerta de Concorrência
+
+### 📌 O Cenário e a Dor do Negócio
+Um grande cliente internacional da indústria farmacêutica ou minerária contrata a Licks Attorneys para blindar sua operação no Brasil. Semanalmente, o INPI publica a Revista da Propriedade Industrial (RPI) com milhares de despachos de patentes. 
+
+O monitoramento manual dessas publicações gera três grandes problemas:
+1. **Gargalo Operacional:** Advogados gastam horas preciosas lendo termos técnicos complexos apenas para fazer uma triagem inicial.
+2. **Risco de Perda de Prazos:** O prazo legal para apresentar uma oposição a uma patente concorrente indesejada é curto. Se a triagem manual atrasar, o cliente perde o direito de defesa.
+3. **Custo Elevado:** Alocar profissionais de alta senioridade jurídica para fazer varredura de tabelas brutas diminui a rentabilidade dos contratos do escritório.
+
+### 🚀 A Solução Proposta por Este Projeto
+Este pipeline atua como um **Motor de Triagem e Alerta Pró-Ativo** integrado a um Dashboard no Power BI. O fluxo de valor acontece em 3 etapas:
+
+1. **Ingestão e Filtro Automatizado:** O script em Python consome os dados textuais brutos (títulos/resumos) de novos depósitos e aplica Processamento de Linguagem Natural (NLP) para limpar os ruídos burocráticos.
+2. **Classificação de Risco por IA:** O modelo de Machine Learning analisa os termos técnicos e prevê instantaneamente o status ou categoria do ativo. Como o modelo atingiu **100% de Recall para a classe 'Vigente'**, ele garante que *nenhuma potencial ameaça ativa passará despercebida*.
+3. **Tomada de Decisão Visual (Power BI):** O resultado do modelo alimenta um painel analítico. Se o sistema detecta um novo pedido "Vigente" que bate com palavras-chave críticas de interesse do cliente, o painel acende um **alerta vermelho**.
+
+## 🚀 Próximos Passos (Roadmap de Evolução)
+Para escalar este Produto Mínimo Viável (MVP) rumo a um ambiente corporativo de larga escala, mapeou-se os seguintes avanços:
+1. **Injeção de Volume:** Expandir a base integrando os arquivos textuais consolidados em formato XML publicados semanalmente na Revista da Propriedade Industrial (RPI) do INPI.
+2. **Tratamento de Desbalanceamento:** Aplicar algoritmos de reamostragem (como SMOTE) ou configurar parâmetros de peso penalizado (`class_weight='balanced'`) para calibrar a identificação de classes minoritárias.
+3. **Modelagem Semântica:** Evoluir o motor de NLP para arquiteturas baseadas em Transformers (como BERTimbau adaptado para o português) para capturar contextos semânticos ultraespecíficos em reivindicações de patentes.
+
+---
+
 ## 🎯 Alinhamento de Negócio (Foco: Licks Attorneys)
 Equipes jurídicas focadas em *Patents Prosecution* e litígios de alta complexidade lidam diariamente com o desafio de monitorar e triar milhares de publicações do INPI. Esta solução demonstra como a Ciência de Dados e a Engenharia de Recursos podem ser aplicadas para:
 * **Mitigação de Riscos:** Identificar com agilidade ativos concorrentes ativos no mercado.
@@ -56,13 +81,7 @@ Para compreender o impacto comercial deste modelo sem a necessidade de jargões 
 
 ---
 
-## 🚀 Próximos Passos (Roadmap de Evolução)
-Para escalar este Produto Mínimo Viável (MVP) rumo a um ambiente corporativo de larga escala, mapeou-se os seguintes avanços:
-1. **Injeção de Volume:** Expandir a base integrando os arquivos textuais consolidados em formato XML publicados semanalmente na Revista da Propriedade Industrial (RPI) do INPI.
-2. **Tratamento de Desbalanceamento:** Aplicar algoritmos de reamostragem (como SMOTE) ou configurar parâmetros de peso penalizado (`class_weight='balanced'`) para calibrar a identificação de classes minoritárias.
-3. **Modelagem Semântica:** Evoluir o motor de NLP para arquiteturas baseadas em Transformers (como BERTimbau adaptado para o português) para capturar contextos semânticos ultraespecíficos em reivindicações de patentes.
 
----
 
 ## 💻 Como Executar o Projeto
 
