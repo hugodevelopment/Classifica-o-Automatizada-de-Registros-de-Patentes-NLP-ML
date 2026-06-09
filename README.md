@@ -1,6 +1,6 @@
 # 🏛️ Classificação Automatizada de Patentes (NLP & ML)
 
-Este projeto implementa uma solução de inteligência de dados voltada ao ecossistema de propriedade industrial e direito patentário. Utilizando dados de registros públicos reais do **CETEM (Centro de Tecnologia Mineral / MCTI)**, o pipeline realiza o processamento de linguagem natural (NLP) de títulos e descrições técnicas para classificar de forma preditiva a situação jurídica de cada ativo.
+Este projeto implementa uma solução de inteligência de dados voltada ao ecossistema de propriedade industrial e direito patentário. Utilizando dados de registros públicos reais do **CETEM (Centro de Tecnologia Mineral / MCTI)** o projeto visa classificar de forma preditiva a situação jurídica de cada ativo.
 
 ---
 
