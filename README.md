@@ -22,7 +22,7 @@ Este pipeline atua como um **Motor de Triagem e Alerta Pró-Ativo** integrado a 
 3. **Tomada de Decisão Visual (Power BI):** O resultado do modelo alimenta um painel analítico. Se o sistema detecta um novo pedido "Vigente" que bate com palavras-chave críticas de interesse do cliente, o painel acende um **alerta vermelho**.
 ---
 
-## 🎯 Alinhamento de Negócio (Foco: Licks Attorneys)
+## 🎯 Alinhamento de Negócio
 Equipes jurídicas focadas em *Patents Prosecution* e litígios de alta complexidade lidam diariamente com o desafio de monitorar e triar milhares de publicações do INPI. Esta solução demonstra como a Ciência de Dados e a Engenharia de Recursos podem ser aplicadas para:
 * **Mitigação de Riscos:** Identificar com agilidade ativos concorrentes ativos no mercado.
 * **Eficiência Operacional:** Automatizar a triagem inicial de grandes volumes de documentos, permitindo que o time jurídico foque na análise estratégica.
