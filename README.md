@@ -19,7 +19,10 @@ Este pipeline atua como um **Motor de Triagem e Alerta Pró-Ativo** integrado a 
 
 1. **Ingestão e Filtro Automatizado:** O script em Python consome os dados textuais brutos (títulos/resumos) de novos depósitos e aplica Processamento de Linguagem Natural (NLP) para limpar os ruídos burocráticos.
 2. **Classificação de Risco por IA:** O modelo de Machine Learning analisa os termos técnicos e prevê instantaneamente o status ou categoria do ativo. Como o modelo atingiu **100% de Recall para a classe 'Vigente'**, ele garante que *nenhuma potencial ameaça ativa passará despercebida*.
-3. **Tomada de Decisão Visual (Power BI):** O resultado do modelo alimenta um painel analítico. Se o sistema detecta um novo pedido "Vigente" que bate com palavras-chave críticas de interesse do cliente, o painel acende um **alerta vermelho**.
+3. **Tomada de Decisão Visual (Power BI):** O resultado do modelo alimenta um dashboard em Powwer Bi ainda em estado inicial, porém com algumas análises como categorização e analise de Cotitulares:
+
+<img width="1131" height="630" alt="image" src="https://github.com/user-attachments/assets/43ff3b8a-d63d-481f-b1e5-20d028feb62d" />
+
 ---
 
 ## 🎯 Alinhamento de Negócio
