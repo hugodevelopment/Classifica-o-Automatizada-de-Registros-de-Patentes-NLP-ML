@@ -1,4 +1,4 @@
-# 🏛️ Classificação Automatizada de Registros Tecnológicos e Patentes (NLP & Machine Learning)
+# 🏛️ Classificação Automatizada de Patentes (NLP & ML)
 
 Este projeto implementa uma solução de inteligência de dados voltada ao ecossistema de propriedade industrial e direito patentário. Utilizando dados de registros públicos reais do **CETEM (Centro de Tecnologia Mineral / MCTI)**, o pipeline realiza o processamento de linguagem natural (NLP) de títulos e descrições técnicas para classificar de forma preditiva a situação jurídica de cada ativo.
 
@@ -53,14 +53,6 @@ projeto-patentes-inpi/
 
 ---
 
-## ⚙️ Tecnologias e Técnicas Aplicadas
-* **Python 3.9+** (Pandas, NumPy, Re)
-* **Scikit-Learn** (`TfidfVectorizer` e `RandomForestClassifier`)
-* **Processamento de Linguagem Natural (NLP):** Remoção customizada de jargões institucionais e ruídos burocráticos do ecossistema de patentes brasileiro para extração do real contexto tecnológico.
-* **Ambiente Isolado (`venv`):** Garantia de reprodutibilidade e integridade do código sem dependências globais.
-
----
-
 ## 📊 Análise Técnica dos Resultados
 
 Ao executar o orquestrador `main.py`, o modelo gera o seguinte relatório de métricas no console:
@@ -77,7 +69,13 @@ Para compreender o impacto comercial deste modelo sem a necessidade de jargões 
 
 ---
 
+## ⚙️ Tecnologias e Técnicas Aplicadas
+* **Python 3.9+** (Pandas, NumPy, Re)
+* **Scikit-Learn** (`TfidfVectorizer` e `RandomForestClassifier`)
+* **Processamento de Linguagem Natural (NLP):** Remoção customizada de jargões institucionais e ruídos burocráticos do ecossistema de patentes brasileiro para extração do real contexto tecnológico.
+* **Ambiente Isolado (`venv`):** Garantia de reprodutibilidade e integridade do código sem dependências globais.
 
+---
 
 ## 💻 Como Executar o Projeto
 
