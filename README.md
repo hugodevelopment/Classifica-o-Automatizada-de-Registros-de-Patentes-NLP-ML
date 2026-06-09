@@ -7,12 +7,11 @@ Este projeto implementa uma solução de inteligência de dados voltada ao ecoss
 ## 💡 Caso de Uso Real: Monitoramento Pró-Ativo e Alerta de Concorrência
 
 ### 📌 O Cenário e a Dor do Negócio
-Um grande cliente internacional da indústria farmacêutica ou minerária contrata a Licks Attorneys para blindar sua operação no Brasil. Semanalmente, o INPI publica a Revista da Propriedade Industrial (RPI) com milhares de despachos de patentes. 
+Um grande cliente contrata a Licks Attorneys para blindar sua operação no Brasil. Semanalmente, o INPI publica a Revista da Propriedade Industrial (RPI) com milhares de despachos de patentes. 
 
 O monitoramento manual dessas publicações gera três grandes problemas:
 1. **Gargalo Operacional:** Advogados gastam horas preciosas lendo termos técnicos complexos apenas para fazer uma triagem inicial.
 2. **Risco de Perda de Prazos:** O prazo legal para apresentar uma oposição a uma patente concorrente indesejada é curto. Se a triagem manual atrasar, o cliente perde o direito de defesa.
-3. **Custo Elevado:** Alocar profissionais de alta senioridade jurídica para fazer varredura de tabelas brutas diminui a rentabilidade dos contratos do escritório.
 
 ### 🚀 A Solução Proposta por Este Projeto
 Este pipeline atua como um **Motor de Triagem e Alerta Pró-Ativo** integrado a um Dashboard no Power BI. O fluxo de valor acontece em 3 etapas:
@@ -62,7 +61,6 @@ Ao executar o orquestrador `main.py`, o modelo gera o seguinte relatório de mé
 * **Classe `Carta`:** Precision = 0.00 | Recall = 0.00 | F1-Score = 0.00
 
 ### 💡 Traduzindo as Métricas para Negócios (Visão Não-Técnica)
-Para compreender o impacto comercial deste modelo sem a necessidade de jargões estatísticos, imagine que a nossa Inteligência Artificial atua como uma **peneira ou filtro de segurança inteligente**:
 
 1. **Risco Zero de Omissão (Recall = 100%):** O modelo obteve pontuação máxima ao identificar documentos da categoria `Vigente`. Na prática, isso significa que **a IA não deixou passar nenhuma patente ativa**. Para o escritório e seus clientes, isso representa segurança jurídica robusta, pois nenhuma tecnologia rival ativa é ignorada.
 2. **O Alarme Falso Seguro:** Devido à natureza desbalanceada dos dados públicos (havia apenas 3 exemplos da classe `Carta` contra 5 da classe `Vigente`), a IA adotou uma postura conservadora. Na dúvida, ela preferiu apontar um documento como ativo a correr o risco de ignorar uma patente concorrente. É o equivalente a um alarme de incêndio sensível: ele prefere soar um alarme falso seguro do que falhar diante de um risco real.
